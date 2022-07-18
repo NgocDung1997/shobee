@@ -1,5 +1,5 @@
 import { action } from "history";
-import { CART_ADD_ITEM ,CART_REMOVE_ITEM} from "../Constaint/cartConstaint";
+import { CART_ADD_ITEM ,CART_REMOVE_ITEM,CART_PROCESS_ITEM} from "../Constaint/cartConstaint";
 
 export const cartReducer = (state = {cartItems:{}}, action)=>{
     switch(action.type){
@@ -22,7 +22,13 @@ export const cartReducer = (state = {cartItems:{}}, action)=>{
                 ...state,
                 error: '',
                 cartItems: state.cartItems.filter((x) => x.product !== action.payload),
-              };    
+              };
+        case CART_PROCESS_ITEM:
+                return {
+                  ...state,
+                  error: '',
+                  cartItems: state.cartItems.filter((x) => x.product === null),
+              };            
         default:
             return state;
     }

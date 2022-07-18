@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Link, useLocation,useParams} from 'react-router-dom';
 import { useDispatch ,useSelector} from 'react-redux';
 import {addToCart} from '../Action/cartAction'
-import {removeFromCart} from '../Action/cartAction'
+import {removeFromCart,processCart} from '../Action/cartAction'
 import MessageBox from '../Componant/messageBox';
 
 export default function CartScreen(props) {
@@ -25,6 +25,11 @@ export default function CartScreen(props) {
     const removeFromCartHandler = (id) => {
       // delete action
       dispatch(removeFromCart(id));
+    };
+
+    const processCartHandler = () => {
+      // delete action
+      dispatch(processCart());
     };
 
     return (
@@ -94,9 +99,9 @@ export default function CartScreen(props) {
             <li>
               <button
                 type="button"
-                onClick={""}
+                onClick={() => processCartHandler()}
                 className="primary block"
-                disabled={cartItems.length === 0}
+                disabled={cartItems.length === 0}               
               >
                 Proceed to Checkout
               </button>

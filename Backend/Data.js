@@ -8,7 +8,7 @@ const data ={
         brand: 'Dell',
         rating: 4.5,
         numReviews: 10,
-        description: "High quality laptop",
+        description: "Dell is headquartered in Round Rock, Texas. The company, first named PC's Limited, was founded in 1984 by American Michael Dell, who was then a student at the University of Texas in Austin. Initially running the business from a dormitory room, Dell started out providing customized upgrades for PCs. ",
         countInStock : 10
     },
     {    
@@ -19,7 +19,7 @@ const data ={
         brand: 'DELL',
         rating: 5,
         numReviews: 110,
-        description: "The best product of the year",
+        description: "A laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported and conveniently used in temporary spaces such as on airplanes, in libraries, temporary offices, and at meetings",
         countInStock : 5
     },
     {    

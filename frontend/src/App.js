@@ -27,7 +27,7 @@ function App() {
             </Link>
         </div>
         <div>
-            <Link to="/sigin">Sign In</Link>
+            
         </div>
       </header>
       <main>
