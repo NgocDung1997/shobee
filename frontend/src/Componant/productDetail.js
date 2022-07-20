@@ -15,7 +15,7 @@ export default function ProductDetail(pros) {
     <div key={product._id} >
         <div className="row top">
             <div className='col-1'>
-            <img className='large'src={product.image} alt={product.name}/>                          
+            <img className='large product-img'src={product.image} alt={product.name}/>                          
             </div>
             <div className='col-2'>
             <ul className='proInfo'>
