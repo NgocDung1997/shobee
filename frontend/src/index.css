@@ -199,6 +199,12 @@ ul{
   
 }
 
+.logo_web{
+  height: 3rem;
+  width: 4rem;
+  padding-top: 0.7rem;
+  margin-right: 0.7rem;
+}
 .product-img:hover{
   transform: scale(1.2); 
 }
